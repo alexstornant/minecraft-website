@@ -1,0 +1,33 @@
+.container{
+  display: grid;
+
+  height: 100vh;
+  width: 100vw;
+
+  grid-template-rows: 75px 1fr 100px;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    'header header'
+    'side-bar main'
+    'footer footer';
+}
+
+.header {
+  grid-area: header;
+  background: indigo;
+}
+
+.side-bar {
+  grid-area: side-bar;
+  background: green;
+}
+
+.main {
+  grid-area: main;
+  background: cadetblue;
+}
+
+.footer {
+  grid-area: footer;
+  background: lightcoral;
+}
