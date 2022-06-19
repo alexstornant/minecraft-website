@@ -8,18 +8,13 @@
   grid-template-columns: 300px 1fr;
   grid-template-areas:
     'header header'
-    'side-bar main'
+    'main main'
     'footer footer';
 }
 
 .header {
   grid-area: header;
   background: indigo;
-}
-
-.side-bar {
-  grid-area: side-bar;
-  background: green;
 }
 
 .main {
