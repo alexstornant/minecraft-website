@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.mat-toolbar {
+  height: 100px;
+}
+
+.container{
+  display: grid;
+
+  height: 100vh;
+  width: 100vw;
+
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'header header'
+    'main main'
+}
+
+.header {
+  grid-area: header;
+  background: indigo;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.main {
+  grid-area: main;
+  background: cadetblue;
+}
