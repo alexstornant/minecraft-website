@@ -13,7 +13,7 @@ export class MainComponent implements OnInit {
   server: any;
 
   ngOnInit(): void {
-    this.mainService.getTestServer().subscribe(data => this.server = data);
+    this.mainService.getTestServer('').subscribe(data => this.server = data);
   }
 
   onClick() {
