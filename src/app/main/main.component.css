@@ -1,0 +1,25 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.servers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.server-card {
+  max-width: 500px;
+  margin: 20px;
+  display: flex;
+}
+
+mat-divider {
+  border-top-width: 2px;
+  border-color: grey;
+}

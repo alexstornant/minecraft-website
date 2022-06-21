@@ -8,8 +8,7 @@ export class MainService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getTestServer() {
-      const url = 'https://api.mcsrvstat.us/2/mc.hypixel.net';
+  public getTestServer(url: string) {
       return this.httpClient.get(url);
   }
 
