@@ -5,7 +5,7 @@
   </mat-form-field>
 
   <!-- User Card -->
-  <mat-card class="server-card">
+  <mat-card class="server-card" *ngIf="server">
     <mat-card-header>
       <mat-card-title>{{server?.hostname}}</mat-card-title>
     </mat-card-header>
