@@ -1,20 +1,19 @@
 <div class="search">
   <div>Search for a Server</div>
-  <form>
-    <mat-form-field appearance="outline">
-      <input matInput placeholder="ex. mc.hypixel.net">
-    </mat-form-field>
-  </form>
+  <mat-form-field appearance="outline">
+    <input #search matInput (keyup.enter)="searchIP(search.value)">
+  </mat-form-field>
 
+  <!-- User Card -->
   <mat-card class="server-card">
     <mat-card-header>
-      <mat-card-title>mc.hypixel.net</mat-card-title>
+      <mat-card-title>{{server?.hostname}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <p>Status: Online (or offline)</p>
-      <p>IP: 172.65.195.110</p>
-      <p>Active Players: 12304</p>
-      <p>Max Players: 50000</p>
+      <p>Status: {{server?.online}}</p>
+      <p>IP: {{server?.ip}}</p>
+      <p>Active Players: {{server?.players.online}}</p>
+      <p>Max Players: {{server?.players.max}}</p>
     </mat-card-content>
   </mat-card>
 

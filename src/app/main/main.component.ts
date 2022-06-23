@@ -16,9 +16,14 @@ export class MainComponent implements OnInit {
   cubecraft: any;
 
   ngOnInit(): void {
-    this.mainService.getTestServer('mc.hypixel.net').subscribe(data => this.hypixel = data);
-    this.mainService.getTestServer('play.pixelmonrealms.com').subscribe(data => this.pixelmon = data);
-    this.mainService.getTestServer('play.cubecraft.net').subscribe(data => this.cubecraft = data);
+    this.mainService.getServer('mc.hypixel.net').subscribe(data => this.hypixel = data);
+    this.mainService.getServer('play.pixelmonrealms.com').subscribe(data => this.pixelmon = data);
+    this.mainService.getServer('play.cubecraft.net').subscribe(data => this.cubecraft = data);
+  }
+
+  searchIP(value: string): void {
+    console.log(value);
+    this.mainService.getServer(value).subscribe(data => this.server = data);
   }
 
 }

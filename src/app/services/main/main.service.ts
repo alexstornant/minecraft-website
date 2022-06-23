@@ -8,9 +8,8 @@ export class MainService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getTestServer(url: string) {
+  getServer(url: string) {
       return this.httpClient.get<any>('https://api.mcsrvstat.us/2/' + url);
   }
-
 
 }
