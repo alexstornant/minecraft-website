@@ -22,7 +22,6 @@ export class MainComponent implements OnInit {
   }
 
   searchIP(value: string): void {
-    console.log(value);
     this.mainService.getServer(value).subscribe(data => this.server = data);
   }
 
