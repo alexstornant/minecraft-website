@@ -2,12 +2,6 @@ body {
   margin: 0;
 }
 
-.mat-toolbar {
-  height: 100px;
-  color: #ececec;
-  background-image: url("/assets/bg-wool-dark.png");
-}
-
 .container{
   display: grid;
 
@@ -23,15 +17,11 @@ body {
 
 .header {
   grid-area: header;
-
+  color: #ececec;
+  background-image: url("/assets/bg-wool-dark.png");
 }
 
 .main {
   grid-area: main;
   background-image: url("/assets/white-wool.webp");
-}
-
-.header-link:link {
-  color: black;
-  text-decoration: none;
 }
