@@ -47,49 +47,57 @@
 
 <div class="servers">
 
-  <!-- Hypixel Card -->
-  <mat-card class="server-card">
-    <mat-card-header>
-      <mat-card-title>{{hypixel?.hostname}}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <p *ngIf="hypixel?.online === true">Status: Online</p>
-      <p *ngIf="hypixel?.online === false">Status: Offline</p>
-      <p>IP: {{hypixel?.ip}}</p>
-      <p>Active Players: {{hypixel?.players.online}}</p>
-      <p>Max Players: {{hypixel?.players.max}}</p>
-      <p>Version: {{hypixel?.version}}</p>
-    </mat-card-content>
-  </mat-card>
+  <ul>
+    <!-- Hypixel Card -->
+    <li>
+      <mat-card class="server-card">
+        <mat-card-header>
+          <mat-card-title>{{hypixel?.hostname}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p *ngIf="hypixel?.online === true">Status: Online</p>
+          <p *ngIf="hypixel?.online === false">Status: Offline</p>
+          <p>IP: {{hypixel?.ip}}</p>
+          <p>Active Players: {{hypixel?.players.online}}</p>
+          <p>Max Players: {{hypixel?.players.max}}</p>
+          <p>Version: {{hypixel?.version}}</p>
+        </mat-card-content>
+      </mat-card>
+    </li>
 
-  <!-- Complex Card -->
-  <mat-card class="server-card">
-    <mat-card-header>
-      <mat-card-title>{{pixelmon?.hostname}}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <p *ngIf="hypixel?.online === true">Status: Online</p>
-      <p *ngIf="hypixel?.online === false">Status: Offline</p>
-      <p>IP: {{pixelmon?.ip}}</p>
-      <p>Active Players: {{pixelmon?.players.online}}</p>
-      <p>Max Players: {{pixelmon?.players.max}}</p>
-      <p>Version: {{pixelmon?.version}}</p>
-    </mat-card-content>
-  </mat-card>
+    <li>
+      <!-- Complex Card -->
+      <mat-card class="server-card">
+        <mat-card-header>
+          <mat-card-title>{{pixelmon?.hostname}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p *ngIf="hypixel?.online === true">Status: Online</p>
+          <p *ngIf="hypixel?.online === false">Status: Offline</p>
+          <p>IP: {{pixelmon?.ip}}</p>
+          <p>Active Players: {{pixelmon?.players.online}}</p>
+          <p>Max Players: {{pixelmon?.players.max}}</p>
+          <p>Version: {{pixelmon?.version}}</p>
+        </mat-card-content>
+      </mat-card>
+    </li>
 
-  <!-- CubeCraft Card -->
-  <mat-card class="server-card">
-    <mat-card-header>
-      <mat-card-title>{{cubecraft?.hostname}}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <p *ngIf="hypixel?.online === true">Status: Online</p>
-      <p *ngIf="hypixel?.online === false">Status: Offline</p>
-      <p>IP: {{cubecraft?.ip}}</p>
-      <p>Active Players: {{cubecraft?.players.online}}</p>
-      <p>Max Players: {{cubecraft?.players.max}}</p>
-      <p>Version: {{cubecraft?.version}}</p>
-    </mat-card-content>
-  </mat-card>
+    <li>
+      <!-- CubeCraft Card -->
+      <mat-card class="server-card">
+        <mat-card-header>
+          <mat-card-title>{{cubecraft?.hostname}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p *ngIf="hypixel?.online === true">Status: Online</p>
+          <p *ngIf="hypixel?.online === false">Status: Offline</p>
+          <p>IP: {{cubecraft?.ip}}</p>
+          <p>Active Players: {{cubecraft?.players.online}}</p>
+          <p>Max Players: {{cubecraft?.players.max}}</p>
+          <p>Version: {{cubecraft?.version}}</p>
+        </mat-card-content>
+      </mat-card>
+    </li>
+  </ul>
 
 </div>

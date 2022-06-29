@@ -11,17 +11,22 @@
   color: black !important;
 }
 
-.servers {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.servers ul {
+  list-style: none;
+  text-align: center;
+  margin: 20px;
 }
 
+.servers li {
+  display: inline-block;
+}
+
+
+
 .server-card {
-  max-width: 500px;
+  max-width: 400px;
   margin: 15px;
-  display: flex;
+  flex-direction: row;
 }
 
 mat-divider {
