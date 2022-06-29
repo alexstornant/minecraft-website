@@ -6,6 +6,11 @@
   margin-top: 20px;
 }
 
+
+::ng-deep .mat-form-field-outline {
+  color: black !important;
+}
+
 .servers {
   display: flex;
   flex-direction: row;
@@ -15,11 +20,12 @@
 
 .server-card {
   max-width: 500px;
-  margin: 20px;
+  margin: 15px;
   display: flex;
 }
 
 mat-divider {
   border-top-width: 2px;
-  border-color: grey;
+  border-color: #171615;
 }
+

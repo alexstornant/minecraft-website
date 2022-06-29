@@ -4,6 +4,8 @@ body {
 
 .mat-toolbar {
   height: 100px;
+  color: #ececec;
+  background-image: url("/assets/bg-wool-dark.png");
 }
 
 .container{
@@ -21,10 +23,12 @@ body {
 
 .header {
   grid-area: header;
+
 }
 
 .main {
   grid-area: main;
+  background-image: url("/assets/white-wool.webp");
 }
 
 .header-link:link {
