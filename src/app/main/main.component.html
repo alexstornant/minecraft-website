@@ -1,12 +1,9 @@
 <div class="search">
-  <mat-form-field appearance="outline">
-    <input #search matInput (keyup.enter)="searchIP(search.value)" class="search-bar">
-  </mat-form-field>
 
 <!--  Before search-->
   <mat-card class="server-card" *ngIf="!server">
     <mat-card-header>
-      <mat-card-title>Search for a server above!</mat-card-title>
+      <mat-card-title>Search for a server below</mat-card-title>
     </mat-card-header>
   </mat-card>
 
@@ -39,6 +36,11 @@
       <p *ngIf="!server?.version">Version: N/A</p>
     </mat-card-content>
   </mat-card>
+
+  <mat-form-field appearance="outline">
+    <input #search matInput (keyup.enter)="searchIP(search.value)" class="search-bar">
+  </mat-form-field>
+
 </div>
 
 <mat-divider></mat-divider>
