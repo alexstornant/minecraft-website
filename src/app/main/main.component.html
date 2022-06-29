@@ -24,12 +24,20 @@
       <mat-card-title>{{server?.hostname}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <p *ngIf="hypixel?.online === true">Status: Online</p>
-      <p *ngIf="hypixel?.online === false">Status: Offline</p>
-      <p>IP: {{server?.ip}}</p>
-      <p>Active Players: {{server?.players.online}}</p>
-      <p>Max Players: {{server?.players.max}}</p>
-      <p>Version: {{server?.version}}</p>
+      <p *ngIf="server?.online === true">Status: Online</p>
+      <p *ngIf="server?.online === false">Status: Offline</p>
+
+      <p *ngIf="server?.ip">IP: {{server?.ip}}</p>
+      <p *ngIf="!server?.ip">IP: Not Found</p>
+
+      <p *ngIf="server?.players?.online">Active Players: {{server?.players.online}}</p>
+      <p *ngIf="!server?.players?.online">Active Players: N/A</p>
+
+      <p *ngIf="server?.players?.max">Max Players: {{server?.players.max}}</p>
+      <p *ngIf="!server?.players?.max">Max Players: N/A</p>
+
+      <p *ngIf="server?.version">Version: {{server?.version}}</p>
+      <p *ngIf="!server?.version">Version: N/A</p>
     </mat-card-content>
   </mat-card>
 </div>
